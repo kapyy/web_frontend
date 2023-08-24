@@ -1,0 +1,108 @@
+$hover: #2D7DFF
+
+@import "~assets/style/color.scss"
+
+.fieldset
+    height: 108px
+    position: relative
+    line-height: 84px
+    font-family: "Skranji-Regular"
+
+    &.fouce,&.hasVal
+        .borderBox
+            .inputBox
+                position: relative
+                box-sizing: border-box
+                .label
+                    height: 16px
+                    color: #666
+                    font-family: Skranji-Regular
+                    font-size: 12px
+                    font-style: normal
+                    line-height: 16px
+                    top: 10px
+                    z-index: 99
+                    width: 90%
+                    background: #fff
+
+    &.err
+        .borderBox
+            background: $err
+            .inputBox
+                .input
+                    border: 10px solid #000
+    &.first
+        .borderBox
+            border-radius: 30px 0px 0px 0px
+            .inputBox
+                border-radius: 30px 0px 0px 0px
+                .input
+                    border-radius: 30px 0px 0px 0px
+
+    .borderBox
+        background: $green
+        height: 74px
+        position: relative
+        top: 20px
+        .inputBox
+            display: block
+            position: relative
+            top: -10px
+            left: 10px
+            background: #fff
+            height: 100%
+            overflow: hidden
+            .input
+                resize: none
+                width: 100%
+                padding-top: 17px
+                border: none
+                font-family: "Skranji-Regular"
+                outline: none
+                color: #333
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 24px
+                border: 10px solid #000
+                height: 100%
+                box-sizing: border-box
+                padding-left: 10px
+                background: none
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 24px
+                caret-color: $active
+                caret-width: 12px
+                position: absolute
+
+                &:hover
+                    border: 10px solid $hover
+            .label
+                position: absolute,
+                top: -4px
+                left: 20px
+                height: 100%
+            .addonAfter
+                position: absolute
+                right: 20px
+    .helperText
+        color: $err
+        font-family: Skranji-Regular
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: 18px
+        position: absolute
+        bottom: -20px
+        height: 20px
+        left: 20px
+
+    &.fouce
+        .borderBox
+            background: none
+
+            .inputBox
+                .input
+                    border: 10px solid $active

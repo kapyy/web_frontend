@@ -1,0 +1,52 @@
+/* @import url('assets/font/Skranji-Regular.ttf'); */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:'Skranji-Bold';
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+iframe
+{
+    display: none;
+}
+
+*{
+  box-sizing: border-box;
+  -webkit-user-drag:none
+}
+
+@font-face{
+  font-family: Skranji-Regular;
+  src: url('~assets/font/Skranji-Regular.ttf')
+}
+@font-face{
+  font-family: Skranji;
+  src: url('~assets/font/Skranji-Regular.ttf')
+}
+
+@font-face{
+  font-family: Caslon;
+  src: url('~assets/font/Caslon-Roman.ttf')
+}
